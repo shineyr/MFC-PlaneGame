@@ -1,0 +1,28 @@
+﻿生成启动时间为 2016/1/21 21:11:51。
+     1>项目“E:\projects\C&C++\PlanGame\PlanGame\PlanGame.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Software Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\PlanGame.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt EnemyPlane.cpp PlanGame.cpp PlanGameView.cpp
+         EnemyPlane.cpp
+         正在生成代码...
+         正在跳过...(未检测到相关更改)
+         PlanGameView.cpp
+         PlanGame.cpp
+       Link:
+         D:\Software Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\projects\C&C++\PlanGame\Debug\PlanGame.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Software Files\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"E:\projects\C&C++\PlanGame\Debug\PlanGame.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\projects\C&C++\PlanGame\Debug\PlanGame.lib" /MACHINE:X86 Debug\PlanGame.res
+         Debug\EnemyBullet.obj
+         Debug\EnemyPlane.obj
+         Debug\Explosion.obj
+         Debug\GameObject.obj
+         Debug\MainFrm.obj
+         Debug\MyBullet.obj
+         Debug\MyPlane.obj
+         Debug\PlanGame.obj
+         Debug\PlanGameDoc.obj
+         Debug\PlanGameView.obj
+         Debug\stdafx.obj
+         PlanGame.vcxproj -> E:\projects\C&C++\PlanGame\Debug\PlanGame.exe
+     1>已完成生成项目“E:\projects\C&C++\PlanGame\PlanGame\PlanGame.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.30
