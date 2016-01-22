@@ -19,12 +19,7 @@ EnemyBullet::~EnemyBullet()
 
 BOOL EnemyBullet::Draw(CDC *pDC, BOOL bPause)
 {
-	int direction = rand() % 2;
-	if (direction == 0)
-		direction = DOWN;
-	m_ptPos.x += (rand() % 10) * (m_speed - 20) *m_direction;
-	m_ptPos.y += m_speed * m_direction;
-
+	m_ptPos.y += m_speed * (m_direction == DOWN ? -1 : 1);
 	m_Images.Draw(pDC, 0, m_ptPos, ILD_TRANSPARENT);
 	return TRUE;
 }

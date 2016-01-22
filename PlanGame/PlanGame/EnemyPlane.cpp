@@ -30,7 +30,12 @@ EnemyPlane::~EnemyPlane()
 BOOL EnemyPlane::Draw(CDC *pDC, BOOL bPause)
 {
 	/*敌机的位置随机变化*/
-	m_ptPos.y = m_ptPos.y + (m_speed + rand() % 10)*m_direction;
+	/*敌机向上飞*/
+	if (m_direction == UP)
+		m_ptPos.y += (m_speed + rand() % 10);
+	/*敌机向下飞*/
+	else
+		m_ptPos.y -= (m_speed + rand() % 10);
 	m_Images.Draw(pDC, m_nImgIdx, m_ptPos, ILD_TRANSPARENT);
 	return TRUE;
 }

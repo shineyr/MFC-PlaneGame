@@ -20,7 +20,7 @@ MyBullet::~MyBullet()
 
 BOOL MyBullet::Draw(CDC *pDC, BOOL bPause)
 {
-	m_ptPos.y -= (m_speed * m_direction);
+	m_ptPos.y -= (m_speed * (m_direction == DOWN ? -1 : 1));
 
 	if (m_direction == UP)
 	{
