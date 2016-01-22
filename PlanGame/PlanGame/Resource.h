@@ -21,10 +21,6 @@
 #define IDB_ENEMYBULLET                 135
 #define IDB_EXPLOSION                   136
 #define IDB_BACKGROUND                  139
-#define IDR_WAVE                        140
-#define IDR_WAVE2                       141
-#define IDR_WAVE1                       142
-#define IDR_WAVE3                       143
 #define IDR_THEME_MENU                  200
 #define ID_SET_STYLE                    201
 #define ID_VIEW_APPLOOK_WIN_2000        205
@@ -39,7 +35,9 @@
 #define ID_VIEW_APPLOOK_OFF_2007_AQUA   218
 #define ID_VIEW_APPLOOK_WINDOWS_7       219
 #define IDS_EDIT_MENU                   306
-
+#define IDR_WAVE1                       323
+#define IDR_WAVE2                       324
+#define IDR_WAVE3                       325
 #define ID_RESTART                      32779
 #define ID_PAUSE                        32780
 
@@ -47,7 +45,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        319
+#define _APS_NEXT_RESOURCE_VALUE        326
 #define _APS_NEXT_COMMAND_VALUE         32771
 #define _APS_NEXT_CONTROL_VALUE         1000
 #define _APS_NEXT_SYMED_VALUE           310

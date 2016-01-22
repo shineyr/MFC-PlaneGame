@@ -154,8 +154,5 @@
     <Media Include="sound\sound3.wav">
       <Filter>资源文件</Filter>
     </Media>
-    <Media Include="sound\sound4.wav">
-      <Filter>资源文件</Filter>
-    </Media>
   </ItemGroup>
 </Project>

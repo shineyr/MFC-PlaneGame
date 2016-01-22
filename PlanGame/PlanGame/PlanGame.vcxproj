@@ -156,7 +156,6 @@
     <Media Include="sound\sound1.wav" />
     <Media Include="sound\sound2.wav" />
     <Media Include="sound\sound3.wav" />
-    <Media Include="sound\sound4.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

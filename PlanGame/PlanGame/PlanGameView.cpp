@@ -232,7 +232,7 @@ void CPlanGameView::OnTimer(UINT nIDEvent)
 		MyBullet *bullet2 = new MyBullet(myPlane->GetPoint().x + 35, myPlane->GetPoint().y, UP);
 		myBulletList.AddTail(bullet2);
 		/*播放战机发射子弹声音*/
-
+		PlaySound((LPCTSTR)IDR_WAVE1, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);
 	}//if
 
 	/*Z键代表暂停*/
@@ -301,6 +301,8 @@ void CPlanGameView::OnTimer(UINT nIDEvent)
 					{
 						  EnemyBullet *eb = new EnemyBullet(enemyPlane->GetPoint().x + 17, enemyPlane->GetPoint().y + 30, enemyPlane->GetDirection());
 						  enemyBulletList.AddTail(eb);
+						  /*敌机发射子弹*/
+						  PlaySound((LPCTSTR)IDR_WAVE3, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);
 					}//case
 					break;
 				}//switch
@@ -374,13 +376,13 @@ void CPlanGameView::OnTimer(UINT nIDEvent)
 				CRect enemyPlaneRect = enemyPlane->GetRect();
 				/*判断该敌机与战机子弹有没有交叉*/
 				CRect tmpRect;
-				if (tmpRect.IntersectRect(&myBulletRect, enemyPlaneRect))
+				if (tmpRect.IntersectRect(&myBulletRect, &enemyPlaneRect))
 				{
 					/*将爆炸对象加入爆炸列表*/
 					Explosion *explosion = new Explosion((enemyPlane->GetPoint().x + 17), (enemyPlane->GetPoint().y + 17));
 					explosionList.AddTail(explosion);
 					/*播放爆炸声音*/
-					//PlaySound((LPCTSTR)IDR_WAVE, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);
+					PlaySound((LPCTSTR)IDR_WAVE2, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);
 					
 					/*爆炸后删除子弹*/
 					myBulletList.RemoveAt(mbPosTmp);
@@ -412,13 +414,13 @@ void CPlanGameView::OnTimer(UINT nIDEvent)
 			CRect myPlaneRect = myPlane->GetRect();
 			/*判断有无交叉*/
 			CRect tmpRect;
-			if (tmpRect.IntersectRect(&enemyBulletRect, myPlaneRect))
+			if (tmpRect.IntersectRect(&enemyBulletRect, &myPlaneRect))
 			{
 				/*将爆炸对象加入爆炸列表*/
 				Explosion *explosion = new Explosion((enemyPlane->GetPoint().x + 17), (enemyPlane->GetPoint().y + 17));
 				explosionList.AddTail(explosion);
 				/*播放爆炸声音*/
-				//PlaySound((LPCTSTR)IDR_WAVE, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);
+				PlaySound((LPCTSTR)IDR_WAVE2, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);
 				/*删除敌机子弹*/
 				enemyBulletList.RemoveAt(ebPosTmp);
 				delete enemyBullet;
@@ -448,12 +450,12 @@ void CPlanGameView::OnTimer(UINT nIDEvent)
 			CRect myPlaneRect = myPlane->GetRect();
 
 			CRect tmpRect;
-			if (tmpRect.IntersectRect(&enemyPlaneRect, myPlaneRect))
+			if (tmpRect.IntersectRect(&enemyPlaneRect, &myPlaneRect))
 			{
 				Explosion *explosion = new Explosion((enemyPlane->GetPoint().x + 18), (enemyPlane->GetPoint().y + 18));
 				explosionList.AddTail(explosion);
 				/*播放爆炸声音*/
-				//PlaySound((LPCTSTR)IDR_WAVE, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);
+				PlaySound((LPCTSTR)IDR_WAVE2, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);
 				/*删除敌机*/
 				enemyPlaneList.RemoveAt(epPosTmp);
 				delete enemyPlane;
@@ -487,14 +489,14 @@ void CPlanGameView::OnTimer(UINT nIDEvent)
 				CRect enemyBulletRect = enemyBullet->GetRect();
 				/*判断有无交叉*/
 				CRect tmpRect;
-				if (tmpRect.IntersectRect(&myBulletRect, enemyBulletRect))
+				if (tmpRect.IntersectRect(&myBulletRect, &enemyBulletRect))
 				{
 					//将爆炸对象添加到爆炸链表中
 					Explosion *explosion = new Explosion((enemyBullet->GetPoint().x + 17), (enemyBullet->GetPoint().y + 17));
 					explosionList.AddTail(explosion);
 
 					/*播放爆炸声音*/
-					PlaySound((LPCTSTR)IDR_WAVE, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);
+					PlaySound((LPCTSTR)IDR_WAVE2, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);
 					//爆炸后删除战机子弹
 					myBulletList.RemoveAt(mbPosTmp);
 					delete myBullet;
@@ -710,7 +712,7 @@ void CPlanGameView::OnLButtonDown(UINT nFlags, CPoint point)
 	{
 		MyBullet *myBullet1 = new MyBullet(myPlane->GetPoint().x, myPlane->GetPoint().y, UP);
 		/*发射子弹声音*/
-		//PlaySound((LPCTSTR)IDR_WAVE2, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);
+		PlaySound((LPCTSTR)IDR_WAVE1, AfxGetInstanceHandle(), SND_RESOURCE | SND_ASYNC);
 		myBulletList.AddTail(myBullet1);
 		MyBullet *myBullet2 = new MyBullet(myPlane->GetPoint().x + 35, myPlane->GetPoint().y, UP);
 		myBulletList.AddTail(myBullet2);
