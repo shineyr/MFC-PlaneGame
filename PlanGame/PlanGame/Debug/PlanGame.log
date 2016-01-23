@@ -1,8 +1,22 @@
-﻿生成启动时间为 2016/1/22 20:52:48。
-     1>项目“E:\GitHub\MFC-PlaneGame\PlanGame\PlanGame\PlanGame.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2016/1/23 17:29:36。
+     1>项目“E:\GitHub\MFC-PlaneGame\PlanGame\PlanGame\PlanGame.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>ClCompile:
-         D:\Software Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\PlanGame.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt PlanGameView.cpp
+         D:\Software Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\PlanGame.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Software Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\PlanGame.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt EnemyBullet.cpp EnemyPlane.cpp Explosion.cpp GameObject.cpp MainFrm.cpp MyBullet.cpp MyPlane.cpp PlanGame.cpp PlanGameDoc.cpp PlanGameView.cpp
          PlanGameView.cpp
+         PlanGameDoc.cpp
+         PlanGame.cpp
+         MyPlane.cpp
+         MyBullet.cpp
+         MainFrm.cpp
+         GameObject.cpp
+         Explosion.cpp
+         EnemyPlane.cpp
+         EnemyBullet.cpp
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\PlanGame.res" PlanGame.rc 
        Link:
          D:\Software Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\GitHub\MFC-PlaneGame\PlanGame\Debug\PlanGame.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Software Files\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"E:\GitHub\MFC-PlaneGame\PlanGame\Debug\PlanGame.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\GitHub\MFC-PlaneGame\PlanGame\Debug\PlanGame.lib" /MACHINE:X86 Debug\PlanGame.res
          Debug\EnemyBullet.obj
@@ -17,8 +31,8 @@
          Debug\PlanGameView.obj
          Debug\stdafx.obj
          PlanGame.vcxproj -> E:\GitHub\MFC-PlaneGame\PlanGame\Debug\PlanGame.exe
-     1>已完成生成项目“E:\GitHub\MFC-PlaneGame\PlanGame\PlanGame\PlanGame.vcxproj”(Build 个目标)的操作。
+     1>已完成生成项目“E:\GitHub\MFC-PlaneGame\PlanGame\PlanGame\PlanGame.vcxproj”(Rebuild 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.32
+已用时间 00:00:02.24

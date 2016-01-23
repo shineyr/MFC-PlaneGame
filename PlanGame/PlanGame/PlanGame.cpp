@@ -21,8 +21,8 @@
 BEGIN_MESSAGE_MAP(CPlanGameApp, CWinAppEx)
 	ON_COMMAND(ID_APP_ABOUT, &CPlanGameApp::OnAppAbout)
 	// 基于文件的标准文档命令
-	ON_COMMAND(ID_FILE_NEW, &CWinAppEx::OnFileNew)
-	ON_COMMAND(ID_FILE_OPEN, &CWinAppEx::OnFileOpen)
+	//ON_COMMAND(ID_FILE_NEW, &CWinAppEx::OnFileNew)
+	//ON_COMMAND(ID_FILE_OPEN, &CWinAppEx::OnFileOpen)
 END_MESSAGE_MAP()
 
 
